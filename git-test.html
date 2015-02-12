@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title> </title>
+	<style>
+	
+	body {
+		background-color:#999;
+	}
+	
+	header {
+		text-align:center;
+		color:#00f;
+	}
+	
+	section {
+		position:relative;
+		width:36%;
+		min-width:300px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	footer {
+		margin-top:50px;
+		width:97%;
+		border-top:1px solid #f00;
+		border-bottom:1px solid #f00;		
+		background-color:#c0c0c0;
+		padding:20px;
+	}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Hi Steve!</h1>
+		<h2>Just a Test</h2>
+	</header>
+		
+	<article>
+		<section>
+			<h3>The Problem with Semantic Layout</h3>
+			<p>Testing out this Git repository thing</p>
+			<p>And trying out a bit of semantic layout along the way.</p>
+			<p>Mind you, a problem with the new HTML5 semantic tags is that the heritage browsers 
+			don't have a clue what they are.</p>
+			<p>Poor old ie7, for example, ain't never heard of header, article, section or footer 
+			(and I suspect ie8 is in the same boat).</p>
+			<p>Consequently, they just ignore them, that is to say, they display any code inside 
+			them that they recognise, p tags, text and so on, but they ignore any styling you 
+			might have applied to the semantic tags.</p>
+			<p>So your page is displayed sans CSS.</p>
+			<p>And, it should be recalled, you can't swap out tags with an ie conditional.</p>
+		</section>
+		<section>
+			<h3>The Solution</h3>
+			<p>One way I have fixed this in the past is to put a separate set of div tags inside the 
+			HTML5 tags and apply the styling to those primitive divs in an ie conditional statement.</p>
+			<p>That works, but you have to ask yourself, why bother using the HTML5 tags in the first place 
+			when the good ol' div still works perfectly well?</p>
+			<p>I'll have to read up on the case for semantic tags again - as I recall it's all about helping the crawlers 
+			recognise stuff that is "likely to be syndicated" or some such thing....</p>
+		</section>
+		
+	</article>
+	<footer>
+		<section>
+			<p>And I note that the big mobs aren't so worried about backwards compatibility now days anyway.</p>
+			<p>For example, Google and Adobe didn't spare a thought for us old folk when they trashed support for 
+			XP without warning or apology.</p>
+			<p>Caused me no end of trouble, that has.</p>
+		<section>
+	</footer>
+</body>
+</html>
